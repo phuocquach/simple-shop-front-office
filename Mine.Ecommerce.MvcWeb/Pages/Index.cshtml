@@ -1,0 +1,9 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="container">
+    @await Component.InvokeAsync("ProductList", new { listProducts = Model.Products, numOfProductOnRow = 3})
+</div>

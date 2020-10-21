@@ -1,0 +1,51 @@
+@model Mine.Ecommerce.Web.Pages.Models.ProductDto
+<div class="col-md-4">
+                    <div class="block product no-border z-depth-2-top z-depth-2--hover">
+                        <div class="block-image">
+                            <a href="#">
+                                @* <img src="https://via.placeholder.com/550x350/eeeeee/000000" class="img-center"> *@
+                                <img src="@Model.Image" class="img-center">
+
+                            </a>
+                            <span class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-blue text-uppercase">New</span>
+                        </div>
+                        <div class="block-body text-center">
+                            <h3 class="heading heading-5 strong-600 text-capitalize">
+                                <a href="#">
+                                    @Model.Name
+                                </a>
+                            </h3>
+                            <p class="product-description">
+                                $@Model.Price
+                                
+                            </p>
+                            <div class="product-colors mt-2">
+                                <div class="color-switch float-wrapper">
+                                    <a href="#" class="bg-purple"></a>
+                                    <a href="#" class="bg-pink"></a>
+                                    <a href="#" class="bg-blue"></a>
+                                </div>
+                            </div>
+                            <div class="product-buttons mt-4">
+                                <div class="row align-items-center">
+                                    <div class="col-2">
+                                        <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Favorite">
+                                            <i class="fa fa-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col-2">
+                                        <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
+                                            <i class="fa fa-share"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col-8">
+                                        <button type="button" class="btn btn-block btn-primary btn-circle btn-icon-left">
+                                            <i class="fa fa-shopping-cart"></i>Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>

@@ -1,0 +1,15 @@
+@using Mine.Ecommerce.MvcWeb.Extension
+@model Mine.Ecommerce.MvcWeb.ViewComponents.ProductList.ProductListViewModel
+
+<div class="shop-default shop-cards shop-tech">
+    @foreach (var row in Model.ListProducts.ToArray().Split(Model.ProductPerRow))
+    {
+        <div class="row">
+            @foreach (var product in row)
+            {
+                @await Component.InvokeAsync("ProductItem", new { item = product})
+            }
+        </div>
+    }
+</div>
+
